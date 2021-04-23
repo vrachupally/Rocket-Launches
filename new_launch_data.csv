@@ -109,4 +109,4 @@ flight_number,launch_year,launch_date_utc,launch_success,Site_ID,Site_Name,Natio
 108,2020,2020-11-21T17:17:00.000Z,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
 109,2020,2020-10-24T15:31:00.000Z,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
 110,2020,2020-12-06T16:17:00.000Z,,ksc_lc_39a,KSC LC 39A,United States,Dragon 2.0,Falcon 9
-110,2020,2020-12-13T17:30:00.000Z,,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+111,2020,2020-12-13T17:30:00.000Z,,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
