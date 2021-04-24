@@ -6,6 +6,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from sqlalchemy import inspect
 from flask import Flask, jsonify
+from flask_cors import CORS, cross_origin
 
 
 #################################################
@@ -42,7 +43,8 @@ for column in columns:
 # Flask Setup
 #################################################
 app = Flask(__name__)
-
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 #################################################
 # Flask Routes
