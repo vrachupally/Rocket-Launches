@@ -1,0 +1,51 @@
+body {
+  background-color:white;
+  font-family: Signika Negative, Asap, sans-serif;
+}
+#container {
+  box-shadow:inset 0px 0px 10px rgba(0,0,0,1);
+  background-color: #444444;
+  height:20px; 
+  top:50px;
+  overflow:visible; 
+  padding:0; 
+  position:relative;
+  width: 400px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.knob {
+	background-color: #008c7b;
+	text-align: center;
+	font-family: Asap, Avenir, Arial, sans-serif;
+	width: 15px;
+	height: 50px;
+	-moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+	border-radius: 10px;
+	line-height: 100px;
+	color: black;
+	position: absolute;
+	top:-17px;
+  z-index:2;
+  border: 2px solid rgba(0,0,0,0.4);
+}
+
+.range {
+  background-color:lime;
+  height:15px; 
+  width: 10px;
+  position:relative;
+  top : 2px;
+  box-shadow:inset 0px 0px 10px black ;
+}
+.gsap {
+  color : green ;
+}
+
+.ancient {
+  font-size:14px;
+  color:#555;
+}

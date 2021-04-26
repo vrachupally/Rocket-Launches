@@ -1,0 +1,112 @@
+flight_number,launch_year,launch_date_utc,launch_success,Site_ID,Site_Name,Nationality,Payload_type,Rocket_Name
+1,2006,3/24/2006,0,kwajalein_atoll,Kwajalein Atoll,United States,Satellite,Falcon 1
+2,2007,3/21/2007,0,kwajalein_atoll,Kwajalein Atoll,United States,Satellite,Falcon 1
+3,2008,8/3/2008,0,kwajalein_atoll,Kwajalein Atoll,United States,Satellite,Falcon 1
+4,2008,9/28/2008,1,kwajalein_atoll,Kwajalein Atoll,United States,Satellite,Falcon 1
+5,2009,7/13/2009,1,kwajalein_atoll,Kwajalein Atoll,Malaysia,Satellite,Falcon 1
+6,2010,6/4/2010,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon Boilerplate,Falcon 9
+7,2010,12/8/2010,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.0,Falcon 9
+8,2012,5/22/2012,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.0,Falcon 9
+9,2012,10/8/2012,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.0,Falcon 9
+10,2013,3/1/2013,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.0,Falcon 9
+11,2013,9/29/2013,1,vafb_slc_4e,VAFB SLC 4E,Canada,Satellite,Falcon 9
+12,2013,12/3/2013,1,ccafs_slc_40,CCAFS SLC 40,Luxembourg,Satellite,Falcon 9
+13,2014,1/6/2014,1,ccafs_slc_40,CCAFS SLC 40,Thailand,Satellite,Falcon 9
+14,2014,4/18/2014,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+15,2014,7/14/2014,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+16,2014,8/5/2014,1,ccafs_slc_40,CCAFS SLC 40,Hong Kong,Satellite,Falcon 9
+17,2014,9/7/2014,1,ccafs_slc_40,CCAFS SLC 40,Hong Kong,Satellite,Falcon 9
+18,2014,9/21/2014,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+19,2015,1/10/2015,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+20,2015,2/11/2015,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+21,2015,3/2/2015,1,ccafs_slc_40,CCAFS SLC 40,Hong Kong,Satellite,Falcon 9
+22,2015,4/14/2015,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+23,2015,4/27/2015,1,ccafs_slc_40,CCAFS SLC 40,Turkmenistan,Satellite,Falcon 9
+24,2015,6/28/2015,0,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+25,2015,12/22/2015,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+26,2016,1/17/2016,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+27,2016,3/4/2016,1,ccafs_slc_40,CCAFS SLC 40,Luxembourg,Satellite,Falcon 9
+28,2016,4/8/2016,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+29,2016,5/6/2016,1,ccafs_slc_40,CCAFS SLC 40,Japan,Satellite,Falcon 9
+30,2016,5/27/2016,1,ccafs_slc_40,CCAFS SLC 40,Thailand,Satellite,Falcon 9
+31,2016,6/15/2016,1,ccafs_slc_40,CCAFS SLC 40,Hong Kong,Satellite,Falcon 9
+32,2016,7/18/2016,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+33,2016,8/14/2016,1,ccafs_slc_40,CCAFS SLC 40,Japan,Satellite,Falcon 9
+34,2016,9/1/2016,0,ccafs_slc_40,CCAFS SLC 40,Israel,Satellite,Falcon 9
+35,2017,1/14/2017,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+36,2017,2/19/2017,1,ksc_lc_39a,KSC LC 39A,United States,Dragon 1.1,Falcon 9
+37,2017,3/16/2017,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+38,2017,3/30/2017,1,ksc_lc_39a,KSC LC 39A,Luxembourg,Satellite,Falcon 9
+39,2017,5/1/2017,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+40,2017,5/15/2017,1,ksc_lc_39a,KSC LC 39A,United Kingdom,Satellite,Falcon 9
+41,2017,6/3/2017,1,ksc_lc_39a,KSC LC 39A,United States,Dragon 1.1,Falcon 9
+42,2017,6/23/2017,1,ksc_lc_39a,KSC LC 39A,Bulgaria,Satellite,Falcon 9
+43,2017,6/25/2017,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+44,2017,7/5/2017,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+45,2017,8/14/2017,1,ksc_lc_39a,KSC LC 39A,United States,Dragon 1.1,Falcon 9
+46,2017,8/24/2017,1,vafb_slc_4e,VAFB SLC 4E,Taiwan,Satellite,Falcon 9
+47,2017,9/7/2017,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+48,2017,10/9/2017,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+49,2017,10/11/2017,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+50,2017,10/30/2017,1,ksc_lc_39a,KSC LC 39A,South Korea,Satellite,Falcon 9
+51,2017,12/15/2017,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+52,2017,12/23/2017,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+53,2018,1/8/2018,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+54,2018,1/31/2018,1,ccafs_slc_40,CCAFS SLC 40,Luxembourg,Satellite,Falcon 9
+55,2018,2/6/2018,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon Heavy
+56,2018,2/22/2018,1,vafb_slc_4e,VAFB SLC 4E,Spain,Satellite,Falcon 9
+57,2018,3/6/2018,1,ccafs_slc_40,CCAFS SLC 40,Spain,Satellite,Falcon 9
+58,2018,3/30/2018,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+59,2018,4/2/2018,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+60,2018,4/18/2018,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+61,2018,5/11/2018,1,ksc_lc_39a,KSC LC 39A,Bangladesh,Satellite,Falcon 9
+62,2018,5/22/2018,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+63,2018,6/4/2018,1,ccafs_slc_40,CCAFS SLC 40,Luxembourg,Satellite,Falcon 9
+64,2018,6/29/2018,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+65,2018,7/22/2018,1,ccafs_slc_40,CCAFS SLC 40,Canada,Satellite,Falcon 9
+66,2018,7/25/2018,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+67,2018,8/7/2018,1,ccafs_slc_40,CCAFS SLC 40,Indonesia,Satellite,Falcon 9
+68,2018,9/10/2018,1,ccafs_slc_40,CCAFS SLC 40,Canada,Satellite,Falcon 9
+69,2018,10/8/2018,1,vafb_slc_4e,VAFB SLC 4E,Argentina,Satellite,Falcon 9
+70,2018,11/15/2018,1,ksc_lc_39a,KSC LC 39A,Qatar,Satellite,Falcon 9
+71,2018,12/3/2018,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+72,2018,12/5/2018,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+73,2018,12/23/2018,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+74,2019,1/11/2019,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+75,2019,2/22/2019,1,ccafs_slc_40,CCAFS SLC 40,Indonesia,Satellite,Falcon 9
+76,2019,3/2/2019,1,ksc_lc_39a,KSC LC 39A,United States,Crew Dragon,Falcon 9
+77,2019,4/11/2019,1,ksc_lc_39a,KSC LC 39A,Saudi Arabia,Satellite,Falcon Heavy
+78,2019,5/4/2019,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+79,2019,5/24/2019,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+80,2019,6/12/2019,1,vafb_slc_4e,VAFB SLC 4E,Canada,Satellite,Falcon 9
+81,2019,6/25/2019,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon Heavy
+82,2019,7/25/2019,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+83,2019,8/6/2019,1,ccafs_slc_40,CCAFS SLC 40,Israel,Satellite,Falcon 9
+84,2019,11/11/2019,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+85,2019,12/5/2019,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+86,2019,12/17/2019,1,ccafs_slc_40,CCAFS SLC 40,Japan,Satellite,Falcon 9
+87,2020,1/7/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+88,2020,1/19/2020,1,ksc_lc_39a,KSC LC 39A,United States,Crew Dragon,Falcon 9
+89,2020,1/29/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+90,2020,2/17/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+91,2020,3/7/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Dragon 1.1,Falcon 9
+92,2020,3/18/2020,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+93,2020,4/22/2020,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+94,2020,5/30/2020,1,ksc_lc_39a,KSC LC 39A,United States,Crew Dragon,Falcon 9
+95,2020,6/4/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+96,2020,6/13/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+97,2020,6/30/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+98,2020,7/20/2020,1,ccafs_slc_40,CCAFS SLC 40,South Korea,Satellite,Falcon 9
+99,2020,8/7/2020,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+100,2020,8/18/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+101,2020,8/30/2020,1,ccafs_slc_40,CCAFS SLC 40,Argentina,Satellite,Falcon 9
+102,2020,9/3/2020,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+103,2020,10/6/2020,,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+104,2020,10/18/2020,1,ksc_lc_39a,KSC LC 39A,United States,Satellite,Falcon 9
+105,2020,10/24/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+106,2020,11/5/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+107,2020,11/16/2020,1,ksc_lc_39a,KSC LC 39A,United States,Crew Dragon,Falcon 9
+108,2020,11/21/2020,1,vafb_slc_4e,VAFB SLC 4E,United States,Satellite,Falcon 9
+109,2020,10/24/2020,1,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
+110,2020,12/6/2020,,ksc_lc_39a,KSC LC 39A,United States,Dragon 2.0,Falcon 9
+111,2020,12/13/2020,,ccafs_slc_40,CCAFS SLC 40,United States,Satellite,Falcon 9
