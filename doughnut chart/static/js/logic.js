@@ -9,8 +9,8 @@ var Dragon = 0;
 // });
 // console.log(payload);
 
-d3.json(url).then(function(launch_data){
-    for (var i = 0; i<launch_data.length; i++) {
+d3.json(url).then(function (launch_data) {
+    for (var i = 0; i < launch_data.length; i++) {
         if (launch_data[i].Payload_type === 0) {
             Satellite += 1
         }
@@ -20,7 +20,7 @@ d3.json(url).then(function(launch_data){
     }
 });
 console.log("Satellite: " + Satellite);
-console.log("Dragon: "+ Dragon);
+console.log("Dragon: " + Dragon);
 
 // var Satellite = 0;
 // var Dragon = 0;
@@ -33,8 +33,8 @@ console.log("Dragon: "+ Dragon);
 //     };
 
 // };
-console.log("Satellite: "+Satellite)
-console.log("Dragon: "+Dragon);
+console.log("Satellite: " + Satellite)
+console.log("Dragon: " + Dragon);
 
 
 // var ctx = document.getElementById("myChart").getContext('2d')
@@ -59,17 +59,18 @@ var ctx = document.getElementById("myChart").getContext('2d')
 Chart.defaults.global.defaultFontSize = 18;
 
 var chart = new Chart(ctx, {
-    type:'doughnut',
+    type: 'doughnut',
     data: {
         labels: ['Satellite', 'Dragon'],
         datasets: [{
             label: 'Payload Type',
             data: [
-            60,
-            51,  
+                60,
+                51,
             ],
             backgroundColor: ['blue', 'orange'],
-            tooltip_content: ['SpaceX has launched a number of satellites for both governmental space agencies and private corporations.', 'Dragon spacecrafts are capable of carrying humans and cargo to and from orbit and beyond.'],
+            tooltip_line1: ['SpaceX has launched a number of satellites for both', 'Dragon spacecrafts are capable of carrying humans'],
+            tooltip_line2: ['governmental space agencies and private corporations.','and cargo to and from orbit and beyond.'],
             borderWidth: 1,
             borderColor: '#777',
             hoverBorderWidth: 3,
@@ -77,42 +78,39 @@ var chart = new Chart(ctx, {
         }]
     },
     options: {
-        title:{
-            display:true,
+        title: {
+            display: true,
             text: 'Mission Type',
             fontSize: 25
         },
         tooltips: {
+            displayColors: false,
             callbacks: {
-              title: function(tooltipItem, data) {
-                return data['labels'][tooltipItem[0]['index']];
-              },
-              label: function(tooltipItem, data) {
-                return data['datasets'][0]['data'][tooltipItem['index']];
-              },
-              afterLabel: function(tooltipItem, data) {
-                var dataset = data['datasets'][0];
-                var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
-                return '(' + percent + '%)';
-              },
-              afterAfterLabel: function(tooltipItem, data) {
-                  return data['datasets'][0]['tooltip_content'][tooltipItem['index']];
-              }
+                title: function (tooltipItem, data) {
+                    return data['labels'][tooltipItem[0]['index']];
+                //     var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+                //     return data['datasets'][0]['data'][tooltipItem['index']]+' (' + percent + '%)';
+                },
+                beforeLabel: function (tooltipItem, data) {
+                    var dataset = data['datasets'][0];
+                    var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+                    return data['datasets'][0]['data'][tooltipItem['index']]+' (' + percent + '%)';
+                    // return data['datasets'][0]['data'][tooltipItem['index']];
+                    // console.log(data);
+                    return data['datasets'][0]['tooltip_content'][tooltipItem['index']];
+                },
+                label: function (tooltipItem, data) {
+                    // var dataset = data['datasets'][0];
+                    // var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+                    // return '(' + percent + '%)';
+                    return data['datasets'][0]['tooltip_line1'][tooltipItem['index']];
+                },
+                afterLabel: function (tooltipItem, data) {
+                    return data['datasets'][0]['tooltip_line2'][tooltipItem['index']];
+                }
             }
         }
     }
 
 });
-
-$("myChart").click(
-    function(event){
-        var activepoints = myChart.getElementAtEvent(event);
-        if(activepoints.length>0){
-            alert("yes!")
-        }
-        else{
-            alert("no")
-        }
-    }
-)
 
