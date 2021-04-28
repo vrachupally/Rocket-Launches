@@ -26,7 +26,7 @@ d3.json(url).then(function (launch_data) {
     var ctx = document.getElementById("myChart").getContext('2d')
 
     // Chart.defaults.global.defaultFontSize = 18;
-
+    
     var chartx = new Chart(ctx, {
         type: '',
         data: {
