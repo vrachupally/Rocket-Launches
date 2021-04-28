@@ -12,7 +12,7 @@ from flask_cors import CORS, cross_origin
 #################################################
 # Database Setup
 #################################################
-engine = sqlalchemy.create_engine("postgresql://postgres:postgres@localhost:5432/Rocket_launch")
+engine = create_engine("postgresql://postgres:postgres@localhost:5432/launch_db")
 connection = engine.connect()
 metadata = sqlalchemy.MetaData()
 launch_data = sqlalchemy.Table("launch_data", metadata, autoload=True, autoload_with=engine)

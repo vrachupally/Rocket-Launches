@@ -181,7 +181,7 @@ d3.json(url).then(function (launch_data) {
             datasets: [{
                 label: 'Payload Type',
                 data: [Satellite, Dragon],
-                backgroundColor: ['blue', 'orange'],
+                backgroundColor: ['#36bff5', '#7bdab4'],
                 tooltip_line1: ['SpaceX has launched a number of satellites for both', 'Dragon spacecrafts are capable of carrying humans'],
                 tooltip_line2: ['governmental space agencies and private corporations.', 'and cargo to and from orbit and beyond.'],
                 borderWidth: 1,
@@ -240,7 +240,7 @@ d3.json(url).then(function (launch_data) {
             datasets: [{
                 label: 'Successful Launches',
                 data: Object.values(success), 
-                backgroundColor: 'blue',
+                backgroundColor: '#1593ba',
                 borderWidth: 1,
                 borderColor: '#777',
                 hoverBorderWidth: 3,
@@ -248,7 +248,7 @@ d3.json(url).then(function (launch_data) {
             },{
                 label: 'Failed Launches',
                 data: Object.values(failure), 
-                backgroundColor: 'orange',
+                backgroundColor: '#d8c293',
                 borderWidth: 1,
                 borderColor: '#777',
                 hoverBorderWidth: 3,
@@ -278,7 +278,7 @@ d3.json(url).then(function (launch_data) {
             datasets: [{
                 label: 'SpaceX Customers',
                 data: Object.values(nationalities), 
-                backgroundColor: 'blue',
+                backgroundColor: '#07243c',
                 borderWidth: 1,
                 borderColor: '#777',
                 hoverBorderWidth: 3,
@@ -338,23 +338,23 @@ function updateConfigAsNewObject(chart) {
     chart.update();
 }
 
-var ctx = document.getElementById("myChart2").getContext('2d')
-var chartx = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: year,
-        datasets: [{
+// var ctx = document.getElementById("myChart2").getContext('2d')
+// var chartx = new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//         labels: year,
+//         datasets: [{
             
-            data: year,
-            backgroundColor: ['blue'],
-            tooltip_line1: ['SpaceX has launched a number of satellites for both', 'Dragon spacecrafts are capable of carrying humans'],
-            tooltip_line2: ['governmental space agencies and private corporations.', 'and cargo to and from orbit and beyond.'],
-            borderWidth: 1,
-            borderColor: '#777',
-            hoverBorderWidth: 3,
-            hoverBorderColor: '#000000'
-        }]
-    }
+//             data: year,
+//             backgroundColor: ['blue'],
+//             tooltip_line1: ['SpaceX has launched a number of satellites for both', 'Dragon spacecrafts are capable of carrying humans'],
+//             tooltip_line2: ['governmental space agencies and private corporations.', 'and cargo to and from orbit and beyond.'],
+//             borderWidth: 1,
+//             borderColor: '#777',
+//             hoverBorderWidth: 3,
+//             hoverBorderColor: '#000000'
+//         }]
+//     }
     
-});
+// });
 
