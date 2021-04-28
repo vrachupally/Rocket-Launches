@@ -5,7 +5,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 from sqlalchemy import inspect
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask_cors import CORS, cross_origin
 
 
@@ -51,13 +51,15 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 #################################################
 
 @app.route("/")
-def welcome():
-    """List all available api routes."""
-    return (
-        f"Available Routes:<br/>"
-        f"/api/v1.0/launch_data<br/>"
-        
-    )
+def index():
+    """Return the homepage."""
+    return render_template("index.html")
+
+@app.route("/index.html")
+def home():
+    """Return the homepage."""
+    return render_template("index.html")
+
 
 
 @app.route("/api/v1.0/launch_data")
