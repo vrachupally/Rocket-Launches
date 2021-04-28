@@ -1,0 +1,58 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <title>Rocket Launch Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" /> -->
+  <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+ 
+</head>
+
+<body>
+
+    <div class="container">
+        <div class = col-md-8>
+            <canvas id="lineChart"></canvas>
+        </div>   
+    </div>  
+
+    <!-- <script>
+        var ctx = document.getElementById("myChart").getContext('2d')
+
+        var chart = new Chart(ctx, {
+            type:'bar',
+            data: {
+                labels: ['boston', 'worcester', 'springfield', 'lowell', 'cambridge', 'new bedford'],
+                datasets: [{
+                    label: 'Population',
+                    data: [
+                    60,
+                    18,
+                    15,
+                    10,
+                    10,
+                    9   
+                    ]
+                }]
+            },
+        });
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./static/js/logic.js"></script>
+    <!-- NEED this link to use Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+    <!-- <script src="./static/js/bonus.js"></script> -->
+    <!-- <script src="samples.json"></script> -->
+    
+  </body>
+  
+  </html>
+  
