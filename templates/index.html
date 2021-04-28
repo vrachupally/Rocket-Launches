@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Slider - Range slider</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="/resources/demos/style.css">
  <!-- Our CSS -->
@@ -51,31 +53,17 @@
          </div>
      </div>
   </div>
+
 <!-- begin viz setup -->
-<div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title">Demographic Info</h3>
-    </div>
-    <div id="sample-metadata" class="panel-body"></div>
-  </div>
-</div>
-<div class="col-md-5">
-  <div id="bar"></div>
-</div>
-<div class="col-md-5">
-  <div id="gauge"></div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12">
-  <div id="bubble"></div>
-</div>
-</div>
-</div>
+<div class="container">
+  <div class = col-md-8>
+      <canvas id="myChart"></canvas>
+  </div>   
+</div>  
  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="static/js/logic.js"></script>
+  <script src="../static/js/logic.js"></script>
   <!-- <script src="samples.json"></script> -->
 
 </body>

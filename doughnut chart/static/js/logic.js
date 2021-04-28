@@ -1,8 +1,58 @@
 var url = "http://127.0.0.1:5000/api/v1.0/launch_data"
+// var payload = []
 var Satellite = 0;
 var Dragon = 0;
+// launch_data = d3.json(url).then(function(launch_data){
+//     for (var i = 0; i<launch_data.length; i++) {
+//         payload.push(launch_data[i].Payload_type);
+//     }
+// });
+// console.log(payload);
 
-var url = "http://127.0.0.1:5000/api/v1.0/launch_data"
+// d3.json(url).then(function (launch_data) {
+//     for (var i = 0; i < launch_data.length; i++) {
+//         if (launch_data[i].Payload_type === 'Satellite') {
+//             Satellite += 1
+//         }
+//         else {
+//             Dragon += 1
+//         }
+//     }
+//     console.log("Satellite: " + Satellite);
+//     console.log("Dragon: " + Dragon);
+
+// console.log("Satellite: " + Satellite);
+// console.log("Dragon: " + Dragon);
+
+// var Satellite = 0;
+// var Dragon = 0;
+// for (var i = 0; i<payload.length; i++) {
+//     if (payload[i]=== "Satellite") {
+//         Satellite+= 1
+//     }
+//     else {
+//         Dragon+=1git
+//     };
+
+// };
+// console.log("Satellite: " + Satellite)
+// console.log("Dragon: " + Dragon);
+
+
+// var ctx = document.getElementById("myChart").getContext('2d')
+
+// var chart = new Chart(ctx, {
+//     type:'bar',
+//     data: {
+//         // labels: ['boston', 'worcester', 'springfield', 'lowell', 'cambridge', 'new bedford'],
+//         labels: payload,
+//         datasets: [{
+//             label: 'Population',
+//             data: payload
+//         }]
+//     },
+// });
+
 d3.json(url).then(function (launch_data) {
     for (var i = 0; i < launch_data.length; i++) {
         if (launch_data[i].Payload_type === 'Satellite') {
@@ -75,7 +125,23 @@ d3.json(url).then(function (launch_data) {
 
     updateConfigAsNewObject(chartx);
     updateConfigByMutating(chartx);
-
+    // function removeData(chart) {
+    //     chart.data.labels.pop();
+    //     chart.data.datasets.forEach((dataset) => {
+    //         dataset.data.pop();
+    //     });
+    //     chart.update();
+    // }
+    // function addData(chart, label, data) {
+    //     console.log(data)
+    //     chart.data.labels.push(label);
+    //     chart.data.datasets.forEach((dataset) => {
+    //         dataset.data.push(data);
+    //     });
+    //     chart.update();
+    // };
+    // removeData(chartx);
+    // addData(chartx, ['Satellite', 'Dragon'],[Satellite, Dragon]);
 });
 
 function updateConfigByMutating(chart) {
@@ -95,15 +161,21 @@ function updateConfigAsNewObject(chart) {
             callbacks: {
                 title: function (tooltipItem, data) {
                     return data['labels'][tooltipItem[0]['index']];
+                    //     var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+                    //     return data['datasets'][0]['data'][tooltipItem['index']]+' (' + percent + '%)';
                 },
-
                 beforeLabel: function (tooltipItem, data) {
                     var dataset = data['datasets'][0];
                     var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
                     return data['datasets'][0]['data'][tooltipItem['index']] + ' (' + percent + '%)';
+                    // return data['datasets'][0]['data'][tooltipItem['index']];
+                    // console.log(data);
+                    // return data['datasets'][0]['tooltip_content'][tooltipItem['index']];
                 },
-
                 label: function (tooltipItem, data) {
+                    // var dataset = data['datasets'][0];
+                    // var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+                    // return '(' + percent + '%)';
                     return data['datasets'][0]['tooltip_line1'][tooltipItem['index']];
                 },
                 afterLabel: function (tooltipItem, data) {
@@ -114,6 +186,4 @@ function updateConfigAsNewObject(chart) {
     }
     chart.update();
 }
-
-
 
