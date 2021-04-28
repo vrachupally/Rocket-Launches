@@ -35,10 +35,28 @@ var failure = {
     2020:0
 };
 
-console.log(success[2015])
+// var nationality = {}
+
+// console.log(success[2015])
 
 var url = "http://127.0.0.1:5000/api/v1.0/launch_data"
 d3.json(url).then(function (launch_data) {
+    var nationality = new Set(launch_data.map(e => e.Nationality));
+    console.log(nationality)
+    function getItems(input) {
+        var arr = input, obj = {};
+        for (var i = 0; i < arr.length; i++) {
+          if (!obj[arr[i].Nationality]) {
+            obj[arr[i].Nationality] = 1;
+          } else if (obj[arr[i].Nationality]) {
+            obj[arr[i].Nationality] += 1;
+          }
+        }
+        return obj;
+    };
+    var nationalities = getItems(launch_data);
+    console.log(nationalities);
+
     for (var i = 0; i < launch_data.length; i++) {
         if (launch_data[i].launch_year === '2006' && launch_data[i].launch_success ===false) {
             failure[2006] += 1
@@ -131,7 +149,7 @@ d3.json(url).then(function (launch_data) {
             success[2020] += 1
         }
     }
-    console.log(Object.keys(success));
+    console.log(launch_data);
 
     // Bar chart from chart.js tutorial
 
@@ -168,30 +186,37 @@ d3.json(url).then(function (launch_data) {
             },
             tooltips: {
                 displayColors: false,
-                // callbacks: {
-                //     title: function (tooltipItem, data) {
-                //         return data['labels'][tooltipItem[0]['index']];
-                //         //     var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
-                //         //     return data['datasets'][0]['data'][tooltipItem['index']]+' (' + percent + '%)';
-                //     },
-                //     beforeLabel: function (tooltipItem, data) {
-                //         var dataset = data['datasets'][0];
-                //         var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
-                //         return data['datasets'][0]['data'][tooltipItem['index']] + ' (' + percent + '%)';
-                //         // return data['datasets'][0]['data'][tooltipItem['index']];
-                //         // console.log(data);
-                //         // return data['datasets'][0]['tooltip_content'][tooltipItem['index']];
-                //     },
-                //     label: function (tooltipItem, data) {
-                //         // var dataset = data['datasets'][0];
-                //         // var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
-                //         // return '(' + percent + '%)';
-                //         return data['datasets'][0]['tooltip_line1'][tooltipItem['index']];
-                //     },
-                //     afterLabel: function (tooltipItem, data) {
-                //         return data['datasets'][0]['tooltip_line2'][tooltipItem['index']];
-                //     }
-                // }
+               
+            }
+        }
+        
+    });
+
+    var bar = document.getElementById("barChart").getContext('2d')
+
+    new Chart(bar, {
+        type: 'bar',
+        data: {
+            labels: Object.keys(nationalities),
+            datasets: [{
+                label: 'SpaceX Customers',
+                data: Object.values(nationalities), 
+                backgroundColor: 'blue',
+                borderWidth: 1,
+                borderColor: '#777',
+                hoverBorderWidth: 3,
+                hoverBorderColor: '#000000'
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Mission Type',
+                fontSize: 25
+            },
+            tooltips: {
+                displayColors: false,
+               
             }
         }
         
