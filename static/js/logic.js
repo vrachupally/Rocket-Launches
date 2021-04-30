@@ -47,6 +47,7 @@ var year = []
 
 var url = "http://127.0.0.1:5000/api/v1.0/launch_data"
 d3.json(url).then(function (launch_data) {
+    console.log("THE DATA: ", launch_data)
     var nationality = new Set(launch_data.map(e => e.Nationality));
     console.log(nationality)
     function getItems(input) {
