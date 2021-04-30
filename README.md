@@ -21,4 +21,5 @@ A user can interact with all three of the visualizations by selecting a start an
 
 Languages used: HTML, CSS, JavaScript, SQL database using pgAdmin 4
 
-We utilized an additional JavaScript library: 1. ChartJS – line graph, doughnut chart, bar chart
+We utilized an additional JavaScript library:
+1. ChartJS – line graph, doughnut chart, bar chart
